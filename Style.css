@@ -1,0 +1,287 @@
+html{
+    background: #E5E5E5;
+}
+canvas{
+    background: #E5E5E5;
+}
+header{
+    position: absolute;
+    left: 5.83%;
+    right: 92.01%;
+    top: 3.91%;
+    bottom: 91.41%;
+
+}
+
+
+#agregar{
+    display: none ;
+}
+
+#b1{
+    flex-direction: row;
+    padding: 24px;
+    gap: 8px;
+
+    position: absolute;
+    width: 317px;
+    height: 114px;
+    left: 561px;
+    top: 402px;
+
+    background: #0A3871;
+    border-radius: 24px;
+
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+
+    color: #FFFFFF;
+
+    flex: none;
+    order: 0;
+    flex-grow: 1;
+}
+
+#b2{
+     position: absolute;
+
+    left: 578px;
+    top: 531px;
+
+    width: 282px;
+    height: 55px;
+    border-radius: 24px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    color: #0A3871;
+    
+    flex: none;
+    order: 0;
+    flex-grow: 1;
+}
+
+#ingresar{
+    position: absolute;
+    width: 299px;
+    height: 48px;
+    left: 376px;
+    top: 256px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 150%;
+    color: #0A3871;
+    border:none;
+    background-color:  #E5E5E5
+}
+#logo2{
+    position: absolute;
+    top: 667px;
+    left: 382px
+
+}
+#textRequisitos{
+    position: absolute;
+    display: flex;
+    top: 667px;
+    left: 400px;
+    width: 91px;
+    height: 18px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 150%;
+
+    color: #495057;
+
+    opacity: 0.8;
+
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+.on{
+    width: 332px;
+    height: 67px;
+
+    background: #0A3871;
+    border-radius: 24px;
+    justify-content: center;
+    flex: none;
+    order: 0;
+    flex-grow: 1;
+
+    color: #FFFFFF
+
+
+}
+#b3{
+    position: absolute;
+    top: 701px;
+    left: 376px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 24px;
+    gap: 8px;
+
+
+}
+#b5{
+    position: absolute;
+    top: 901px;
+    left: 376px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 24px;
+    gap: 8px;
+
+}
+.off{
+    border-radius: 24px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+
+    color: #0A3871;
+
+    flex: none;
+    order: 0;
+    flex-grow: 1;
+    width: 332px;
+    height: 67px;
+
+}
+#b4{
+    position: absolute;
+    top: 701px;
+    left: 756px;
+}
+#b6{
+    position: absolute;
+    top: 901px;
+    left: 756px;
+}
+#botonesFinales{
+    display: none;
+}
+.munheco{
+    visibility: hidden;
+
+    
+}
+
+
+#cabeza{
+    position: absolute;
+    width: 63px;
+    height: 63px;
+    left: 795.67px;
+    top: 140px;
+    border-radius: 8px;
+
+}
+#brazo-izq{
+    position: absolute;
+    width: 4.5px;
+    height: 72px;
+    left: 809.75px;
+    top: 210.88px;
+    background: #0A3871;
+    border-radius: 8px;
+    transform: rotate(30deg)
+}
+#brazo-derecho{
+    position: absolute;
+    width: 4.5px;
+    height: 72px;
+    left: 843.52px;
+    top: 210.88px;
+    background: #0A3871;
+    border-radius: 8px;
+    transform: matrix(-0.87, 0.5, 0.5, 0.87, 0, 0);
+}
+#pierna-derecha{
+    position: absolute;
+    width: 4.5px;
+    height: 72px;
+    left: 843.52px;
+    top: 330.62px;
+    background: #0A3871;
+    border-radius: 8px;
+    transform: matrix(-0.87, 0.5, 0.5, 0.87, 0, 0);
+}
+#pierna-izq{
+    position: absolute;
+    width: 4.5px;
+    height: 72px;
+    left: 808.75px;
+    top: 330.62px;
+    background: #0A3871;
+    border-radius: 8px;
+    transform: rotate(30deg);
+}
+#tronco{
+    position: absolute;
+    width: 4.5px;
+    height: 135px;
+    left: 826.92px;
+    top: 203px;
+    background: #0A3871;
+    border-radius: 8px;
+}
+#cuerda{
+    position: absolute;
+    width: 4.5px;
+    height: 49.5px;
+    left: 826.92px;
+    top: 93px;
+    background: #0A3871;
+    border-radius: 8px;
+}
+#poste{
+    position: absolute;
+    width: 4.5px;
+    height: 360px;
+    left: 653.67px;
+    top: 95px;
+    background: #0A3871;
+    border-radius: 8px;
+}
+#base{
+    position: absolute;
+    width: 294px;
+    height: 5px;
+    left: 573px;
+    top: 454px;
+}
+#palo-superior{
+    position: absolute;
+    width: 177.75px;
+    height: 4.5px;
+    left: 653.67px;
+    top: 91px;
+    background: #0A3871;
+    border-radius: 8px;
+}
