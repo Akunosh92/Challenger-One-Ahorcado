@@ -12,35 +12,31 @@
         <header><img src="imagenes/Vector.png" alt="Logo de Alura"></header>
 
         <div id="inicio">
-            <input type="submit" value="iniciar-juego" id="b1">Iniciar Juego</input>
-            <button id="b2">Agrega nueva palabra</button>
+            <input type="submit" value="iniciar Juego" id="b1"></input>
+            <input type="submit"  value="Agregar nueva Palabra" id="b2" ></input>
         </div>
-
         <div >
-            <img src="imagenes/Ellipse 9 (Stroke).png" alt="cabeza" id="cabeza" class="munheco">
-            <img src="imagenes/Rectangle 14.png" alt="base" id="base" class="munheco">
-            <img src="imagenes/Rectangle 15.png" alt="poste" id="poste" class="munheco">
-            <img src="imagenes/Rectangle 16.png" alt="palo superior" id="palo-superior" class="munheco">
-            <img src="imagenes/Rectangle 17.png" alt="cuerda" id="cuerda" class="munheco">
-            <img src="imagenes/Rectangle 18.png" alt="tronco" id="tronco" class="munheco">
-            <img src="imagenes/Rectangle 19.png" alt="pierna izquierda" id="pierna-izq" class="munheco">
-            <img src="imagenes/Rectangle 20.png" alt="pierna derecha" id="pierna-derecha" class="munheco">
-            <img src="imagenes/Rectangle 21.png" alt="brazo derecho" id="brazo-derecho" class="munheco">
-            <img src="imagenes/Rectangle 22.png" alt="brazo izquierdo" id="brazo-izq" class="munheco">
+            <canvas width="1200" height="860" id="forca"></canvas>
+        </div>
+        <div id="agregar">
+            <input type="text"  name="ingresar" id="ingresar" placeholder="Ingrese una palabra">
+            <input type="submit" id="b3" name="ingresar" value="Guardar y empezar" class="on" ></input>
+            <input type="submit" id="b4" value="Cancelar" class="off" ></input>
+            <img src="imagenes/Vector2.png" id="logo2" alt="logo de exclamacion" class="agregarText">
+            <p id="textRequisitos" >Max 8 letras</p>
         </div>
 
-        <div id="agregar">
-            <input type="text" class="agregarText" name="ingresar" id="ingresar" placeholder="Ingrese una palabra">
-            <button id="b3" name="ingresar" class="agregarText">Guardar y Empezar</button>
-            <button id="b4" class="agregarText">Cancelar</button>
-            <img src="imagenes/Vector2.png" id="logo2" alt="logo de exclamacion" class="agregarText">
-            <p id="textRequisitos" class="agregarText">Max 8 letras</p>
+        <div id="botonesFinales">
+            <input type="submit" value="Nuevo Juego" id="b5" class="on">
+            <input type="submit" value="Desistir" id="b6" class="off">
+
         </div>
+        <script src="script2.js"></script>
+        <script src="canvas.js"></script>
     </body>
-    <footer></footer>
+    <footer>
+
+    </footer>
 
 </html>
 
-<script src="Script.js">
-
-</script>

@@ -1,47 +1,80 @@
+//selectores
+let palabras = ["ALURA","ORACLE" ,"ONE","JAVASCRIPT","HTML"];
+let tablero = document.getElementById("forca").getContext("2d");
+let palabraSecreta = "";
+let palabraNueva = "";
+var ejecutar = false
+const regexp = /^[A-Z]+$/i;
+var c=0
 
-var img= [document.getElementById("base"), 
-document.getElementById("poste"),
-document.getElementById("palo-superior"),
-document.getElementById("cuerda"),
-document.getElementById("cabeza"),
-document.getElementById("tronco"),
-document.getElementById("brazo-izq"),
-document.getElementById("brazo-derecho"),
-document.getElementById("pierna-izq"),
-document.getElementById("pierna-derecha")]
-
-var b1= document.getElementById("b1");
-var b2= document.getElementById("b2");
-var b= document.getElementById("inicio");
-var palabraOculta=["poder","logrado","alura","html","contactos"];
-var escondida;
-
-
-function palabraOculta(){
-	
-	var aleatoria= Math.floor((Math.random()*palabraOculta.length));
-
-	escondida = palabraOculta[aleatoria];
-
+function escogerPalabraSecreta(){
+    let palabra = palabras[Math.floor(Math.random()*palabras.length)]
+    palabraSecreta = palabra
+    console.log(palabraSecreta)
 }
 
-
-
-function esconderBotonesInicio(){
-
-	b1.style.visibility = "hidden"
-	b2.style.visibility = "hidden"
-
-	for(var i=0; i< img.length; i++){
-  img[i].style.visibility = "visible"
-
+function intentaDeNuevo(){
+    alert("Error, intenta de nuevo");
+    document.getElementById("ingresar").value = "";
+    document.getElementById("ingresar").focus();
 }
 
-	return
+function validar(){
+    if(!palabraNueva){
+        ejecutar= false;
+        }else{
+            if(palabraNueva.length > 8){
+            ejecutar = false; 
+            }else{
+                if(regexp.test(palabraNueva)){
+                    ejecutar = true;
+                }else ejecutar = false; 
 
+            }
+        }
+        
 }
 
+//iniciar juego
 
+function iniciarJuego(){
+    document.getElementById("b1").style.display ="none" ;
+    document.getElementById("b2").style.display ="none";
+    document.getElementById("botonesFinales").style.display = "initial";
+    escogerPalabraSecreta()
+    dibujarCanvas()
+    dibujarLinea()
+    
+}
 
-b1.onclick = console.log(escondida)
-b2.onclick = palabraOculta
+function agregarText(){
+    document.getElementById("b1").style.display ="none" ;
+    document.getElementById("b2").style.display ="none";
+    document.getElementById("agregar").style.display = "initial";
+    document.getElementById("ingresar").focus() ;
+}
+
+function guardarEmpezar(){
+    palabraNueva = document.getElementById("ingresar").value 
+
+    validar()
+
+    if(ejecutar){
+        palabras.push(document.getElementById("ingresar").value.toUpperCase())
+        document.getElementById("agregar").style.display = "none";
+        iniciarJuego()
+    }
+    else intentaDeNuevo();
+}
+
+function volver(){
+    document.getElementById("b1").style.display ="initial" ;
+    document.getElementById("b2").style.display ="initial";
+    document.getElementById("agregar").style.display = "none";
+}
+
+document.getElementById("b1").onclick = iniciarJuego ;
+document.getElementById("b2").onclick = agregarText ;
+document.getElementById("b3").onclick = guardarEmpezar;
+document.getElementById("b4").onclick = volver ;
+document.getElementById("b5").onclick = iniciarJuego ;
