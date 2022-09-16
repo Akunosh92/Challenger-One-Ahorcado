@@ -174,7 +174,7 @@ function dibujarLetraCorrecta(){
     tablero.linewidth = 6;
     tablero.linecap = "round";
     tablero.lineJoin = "round";
-    tablero.fillStyle = "red";
+    tablero.fillStyle = "#0A3871";
     tablero.strokeStyle ="#0A3871";
     tablero.font="bold 50px arial"
     tablero.beginPath();
